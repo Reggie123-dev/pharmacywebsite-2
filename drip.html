@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIPS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="drips-">
+
+    <section id="sideNav">
+        <header>
+            <nav>
+                <ul id="list">
+                    <li><a href="index.html">HOME</a></li>
+                    <br>
+                    <li><a href="inject.html">INJECTIONS</a></li>
+                    <br>
+                    <li><a href="syrup.html">SYRUP DRUG</a></li>
+                    <br>
+                    <li><a href="diapers.html">DIAPERS</a></li>
+                    <br>
+                    <li><a href="drip.html">DRIPS</a></li>
+                    <br>
+                    <li><a href="medicalgloves.html">MEDICAL-HANDGLOVES</a></li>
+                    <br>
+                    <li><a href="tablet.html">TABLET DRUGS</a></li>
+                    <br>
+                    <li><a href="inhaler.html">INHALERS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!-- The picture of open nav  -->
+    <div id="menuBtn">
+        <img src="./images/menu.png" alt="menu button" id="menu">
+    </div>
+    <br>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                // The picture of close button nav
+                menu.src = "./images/close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "./images/menu.png";
+            }
+        }
+    </script>
+    <h1>DRIPS</h1>
+    <div id="drip">
+        <div class="drips">
+            <img src="images/drip1.webp" alt="">
+            <p class="injections">INFUSION SET</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div class="drips">
+            <img src="images/weight drip and more.jpeg" alt="">
+            <p class="injections">WEIGHT DRIP</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div class="drips">
+            <img src="images/infusion set.jpg" alt="">
+            <p class="injections">INFUSION SET</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div class="drips">
+            <img src="images/beauty- drip.webp" alt="">
+            <p class="injections">BEAUTY DRIP</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div class="drips">
+            <img src="images/nausea- drip.webp" alt="">
+            <p class="injections">NAUSEA DRIP</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div class="drips">
+            <img src="images/cold-and-flu drip.png.crdownload" alt="">
+            <p class="injections">COLD AND FLU DRIP</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div class="drips">
+            <img src="images/hydration drip.png" alt="">
+            <p class="injections">HYDRATION DRIP</p>
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+
+    </div>
+</body>
+
+</html>

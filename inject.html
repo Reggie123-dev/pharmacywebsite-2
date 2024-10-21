@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta injections="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INJECTIONS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="injections-">
+    <section id="sideNav">
+        <header>
+            <nav>
+                <ul id="list">
+                    <li><a href="index.html">HOME</a></li>
+                    <br>
+                    <li><a href="inject.html">INJECTIONS</a></li>
+                    <br>
+                    <li><a href="syrup.html">SYRUP DRUG</a></li>
+                    <br>
+                    <li><a href="diapers.html">DIAPERS</a></li>
+                    <br>
+                    <li><a href="drip.html">DRIPS</a></li>
+                    <br>
+                    <li><a href="medicalgloves.html">MEDICAL-HANDGLOVES</a></li>
+                    <br>
+                    <li><a href="tablet.html">TABLET DRUGS</a></li>
+                    <br>
+                    <li><a href="inhaler.html">INHALERS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <!-- The picture of open nav  -->
+    <div id="menuBtn">
+        <img src="./images/menu.png" alt="menu button" id="menu">
+    </div>
+    <br>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px"
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                // The picture of close button nav
+                menu.src = "./images/close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "./images/menu.png";
+            }
+        }
+    </script>
+    <h1>INJECTIONS MEDICINES</h1>
+    <div id="inject">
+        <div class="injects">
+            <img src="images/injection1.jpg" alt="">
+            <p class="injections">BENYLIN</p>
+            <p class="price">PRICE:</p>
+            <button class="but">buy</button>
+        </div>
+        <div class="injects">
+            <img src="images/injection2.jpg" alt="">
+            <p class="injections">BENYLIN</p>
+            <p class="price">PRICE:</p>
+            <button class="but">buy</button>
+        </div>
+        <div class="injects">
+            <img src="images/injection3.png" alt="">
+            <p class="injections">BENYLIN</p>
+            <p class="price">PRICE:</p>
+            <button class="but">buy</button>
+        </div>
+        <div class="injects">
+            <img src="images/injection4.webp" alt="">
+            <p class="injections">BENYLIN</p>
+            <p class="price">PRICE:</p>
+            <button class="but">buy</button>
+        </div>
+        <div class="injects">
+            <img src="images/injection5.webp" alt="">
+            <p class="injections">BENYLIN</p>
+            <p class="price">PRICE:</p>
+            <button class="but">buy</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

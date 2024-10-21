@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICAL-HANDGLOVES</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="sideNav">
+        <header>
+            <nav>
+                <ul id="list">
+                    <li><a href="index.html">HOME</a></li>
+                    <br>
+                    <li><a href="inject.html">INJECTIONS</a></li>
+                    <br>
+                    <li><a href="syrup.html">SYRUP DRUG</a></li>
+                     <br>
+                    <br>
+                    <li><a href="diapers.html">DIAPERS</a></li>
+                    <br>
+                    <li><a href="drip.html">DRIPS</a></li>
+                    <br>
+                    <li><a href="medicalgloves.html">MEDICAL-HANDGLOVES</a></li>
+                    <br>
+                    <li><a href="tablet.html">TABLET DRUGS</a></li>
+                    <br>
+                    <li><a href="inhaler.html">INHALERS</a></li>
+                </ul>
+            </nav>
+        </header>
+        </section>
+    
+        <!-- The picture of open nav  -->
+        <div id="menuBtn">
+            <img src="./images/menu.png" alt="menu button" id="menu">
+        </div>
+        <br>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+    
+            sideNav.style.right = "-250px"
+    
+            menuBtn.onclick = function () {
+                if (sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0";
+                    // The picture of close button nav
+                    menu.src = "./images/close.png";
+                }
+                else {
+                    sideNav.style.right = "-250px";
+                    menu.src = "./images/menu.png";
+                }
+            }
+        </script>
+    <h1>MEDICAL-HANDGLOVES</h1>
+    <div id="medicalgloves">
+        <div>
+            <img src="images/medical gloves1.webp" alt="">
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div>
+            <img src="images/medical gloves2.avif" alt="">
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div>
+            <img src="images/medical gloves3.webp" alt="">
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div>
+            <img src="images/medical gloves4.jpeg" alt="">
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+        <div>
+            <img src="images/medical gloves5.avif" alt="">
+            <p class="price">PRICE:</p>
+            <p><button class="but">buy</button></p>
+        </div>
+    </div>
+</body>
+</html>

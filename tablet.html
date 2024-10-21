@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TABLETS</title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- tablet section begins -->
+
+<body class="run">
+  <section id="sideNav">
+    <header>
+      <nav>
+        <ul id="list">
+          <li><a href="index.html">HOME</a></li>
+          <br>
+          <li><a href="inject.html">INJECTIONS</a></li>
+          <br>
+          <li><a href="syrup.html">SYRUP DRUG</a></li>
+          <br>
+          <li><a href="diapers.html">DIAPERS</a></li>
+          <br>
+          <li><a href="drip.html">DRIPS</a></li>
+          <br>
+          <li><a href="medicalgloves.html">MEDICAL-HANDGLOVES</a></li>
+          <br>
+          <li><a href="tablet.html">TABLET DRUGS</a></li>
+          <br>
+          <li><a href="inhaler.html">INHALERS</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+
+  <!-- The picture of open nav  -->
+  <div id="menuBtn">
+    <img src="./images/menu.png" alt="menu button" id="menu">
+  </div>
+  <br>
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        // The picture of close button nav
+        menu.src = "./images/close.png";
+      }
+      else {
+        sideNav.style.right = "-250px";
+        menu.src = "./images/menu.png";
+      }
+    }
+  </script>
+  <h1 id="lis"> LISTS OF DRUGS IN THE TABLET SECTION</h1>
+  <div id="tablet">
+    <div>
+      <p class="name">ACECLOFENAC AND THIOCOLCHICOSIDE </p>
+      <img src="images/aceclofenac and thiocolchicoside tablet.jpg" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">AMOXICILLIN</p>
+      <img src="images/amoxicillin tab.png" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">AZITHROMYCIN</p>
+      <img src="images/azithromycin tab.jpg" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">DICLOFENAC</p>
+      <img src="images/diclofenac tablet.webp" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">PANADOL - EXTRA</p>
+      <img src="images/Panadol-Extra- tab.png" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">PARACETAMOL</p>
+      <img src="images/Paracetamol tab.jpg" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">TETRACYCLIN</p>
+      <img src="images/Tetracycline tab.jpg" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+    <div>
+      <p class="name">TRUGLISE</p>
+      <img src="images/truglise tablet.webp" alt="" width="250">
+      <p class="price">PRICE:</p>
+      <button class="but">buy</button>
+    </div>
+  </div>
+  <!-- tablet section ends -->
+</body>
+
+</html>
